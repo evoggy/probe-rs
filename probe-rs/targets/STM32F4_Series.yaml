@@ -745,6 +745,16 @@ variants:
       end: 0x20020000
     cores:
     - main
+  - !Nvm
+    name: OTP
+    range:
+      start: 0x1fff7800
+      end: 0x1fff7a10
+    cores:
+    - main
+    access:
+      write: false
+      boot: false
   flash_algorithms:
   - stm32f4xx_1024
   - stm32f401xx_opt
